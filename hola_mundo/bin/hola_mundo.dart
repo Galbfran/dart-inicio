@@ -22,12 +22,6 @@ void main(List<String> arguments) {
     print(num);
   }
 
-  var array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-  for (int i = 0; i < array2.length; i++) {
-    print(array2[i]);
-  }
-
   int fibonacci(int n) {
     if (n == 0 || n == 1) return n;
     return fibonacci(n - 1) + fibonacci(n - 2);
