@@ -1,8 +1,7 @@
-import 'package:variables/variables.dart' as variables;
-
 void main(List<String> arguments) {
   //datos numericos
   int variableEntera = 10;
+  //datos decimales
   double variableDecimal = 3.16;
 
   //cadema de texto
