@@ -28,7 +28,20 @@ class _InicioState extends State<Inicio> {
       appBar: AppBar(
         title: Text("Text App"),
       ),
-      body: Center(child: Text("Hello World")),
+      body: ListView(
+        children: [
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://rickandmortyapi.com/api/character/avatar/361.jpeg"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://rickandmortyapi.com/api/character/avatar/361.jpeg"),
+          )
+        ],
+      ),
     );
   }
 }
