@@ -28,20 +28,18 @@ class _InicioState extends State<Inicio> {
       appBar: AppBar(
         title: Text("Text App"),
       ),
-      body: ListView(
-        children: [
-          Container(
-            padding: EdgeInsets.all(20.0),
-            child: Image.network(
-                "https://rickandmortyapi.com/api/character/avatar/361.jpeg"),
-          ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            child: Image.network(
-                "https://rickandmortyapi.com/api/character/avatar/361.jpeg"),
-          )
-        ],
-      ),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Container(
+                width: MediaQuery.of(context).size.width,
+                child: Text(
+                  "Hello",
+                  textAlign: TextAlign.center,
+                )),
+            Text("chau")
+          ]),
     );
   }
 }
